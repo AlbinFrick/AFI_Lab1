@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Hello and Welcome!</h1>
+        <hr/>
+        <p>To insert new book typ title and author and hit submit</p>
+        <form action="/book_insert" method="POST">
+            <input type="text" placeholder="Author" name="create_author">
+            <input type="text" placeholder="Title" name="create_title">
+            <button>Submit</button>
+        </form>
+        <p>Create a new user here!</p>
+        <form action="/user_create" method="POST">
+            <input type="text" placeholder="Username" name="create_username">
+            <input type="text" placeholder="password" name="create_password">
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+.App-header {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(40, 44, 55);
+    text-align: center;
+}
+
+.App-header p {
+    color: white;
+}
+
+.App-header a {
+    color: rgb(97, 218, 251);
+}
