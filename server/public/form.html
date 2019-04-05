@@ -8,11 +8,42 @@
             <input type="text" placeholder="Title" name="create_title">
             <button>Submit</button>
         </form>
-        <p>Create a new user here!</p>
-        <form action="/user_create" method="POST">
-            <input type="text" placeholder="Username" name="create_username">
-            <input type="text" placeholder="password" name="create_password">
+
+        <p>Delete book by id</p>
+        <form action="/book_delete" method="POST">
+            <input type="text" placeholder="ID" name="delete_ID">
             <button>Submit</button>
         </form>
+
+        <p>Update author or/and title</p>
+        <form action="/book_update" method="POST">
+            <input type="text" placeholder="ID" name="update_id">
+            <input type="text" placeholder="New Author" name="update_author">
+            <input type="text" placeholder="New Title" name="update_title">
+            <button>Submit</button>
+        </form>
+        
+        <p>Create a new user here!</p>
+        <form action="/user_create" method="POST">
+            <input type="text" placeholder="Username" name="username">
+            <input type="text" placeholder="password" name="password">
+            <input type="text" placeholder="Token" name="token">
+            <button>Submit</button>
+        </form>
+        
+        <p>Delete user by id</p>
+        <form action="/user_delete" method="POST">
+            <input type="text" placeholder="ID" name="delete_ID">
+            <button>Submit</button>
+        </form>
+
+        <p>Login test</p>
+        <form action="/login" method="POST">
+            <input type="text" placeholder="Username" name="username">
+            <input type="text" placeholder="Password" name="password">
+            <button>Submit</button>
+        </form>
+        
+
     </body>
 </html>

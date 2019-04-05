@@ -1,0 +1,47 @@
+.ListComp h2 {
+    margin: 0;
+    padding: 3vw;
+}
+
+.ListComp ul {
+    width: 70vw;
+    margin-left: 2vw;
+    list-style-type: none;
+}
+
+.ListComp ul .listButtonContainer {
+    border-bottom: 1px solid black;    
+}
+
+.ListComp ul li{
+    display: inline-block;
+    padding: 1vw;
+}
+
+.ListComp button {
+    float: right;
+    margin: 1vw 0.5vw;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 5px;
+    color: lightgray;
+}
+
+.ListComp button:first-child {
+    background-color: blue;
+}
+
+.ListComp img {
+    width: 20vw;
+    margin-left: 4vw;
+}
+
+.errorContainer{
+    width: 50vw;
+    height: 2vw;
+    padding: 0;
+    margin-left: 4vw; 
+    text-align: center;
+    color: red;
+}

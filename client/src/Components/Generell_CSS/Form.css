@@ -1,0 +1,73 @@
+.FormComp {
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+}
+
+.FormComp h1 {
+    margin: 0;
+}
+
+.FormComp form {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+        '. input1 input1 .'
+        '. error1 error1 .'
+        '. input2 input2 .'
+        '. error2 error2 .'
+        '. ...... button .';
+   
+}
+
+.FormComp form input {
+    min-height: 5vw;
+    height: 50%;
+    border-radius: 10px;
+    border: none;
+    text-indent: 1vw;
+    color: black;
+    background-color: lightgrey;
+}
+
+.FormComp form input:focus{
+    outline: none;
+}
+.FormComp form .input1 {
+    grid-area: input1;
+    margin: auto 0;
+}
+
+.FormComp form .input2 {
+    grid-area: input2;
+}
+
+.FormComp form button {
+    grid-area: button;
+    width: 60%;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+
+.FormComp form button:focus {
+    outline: none;
+    box-shadow: 0 0 3pt 2pt black;
+}
+
+.FormComp .inputError {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.FormComp #input1Error {
+    grid-area: error1
+}
+
+.FormComp #input2Error {
+    grid-area: error2
+}

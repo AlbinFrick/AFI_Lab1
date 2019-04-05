@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import Books from './Components/Books/books.js';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import Books from './Components/Books/books';
+import BookForm from './Components/Books/bookForm';
+import Users from './Components/Users/Users';
+import UserForm from './Components/Users/UserForm';
+import BookUpdate from './Components/Books/bookUpdate'
+import UserUpdate from './Components/Users/UserUpdate'
+import Login from './Components/login/login'
+import Logout from './Components/logout/logout'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-       <Books />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route exact path='/' component={Navbar} />
+          <Route path='/books' component={Books} />
+          <Route path='/addBook' component={BookForm} />
+          <Route path='/bookUpdate' component={BookUpdate} />
+          <Route path='/users' component={Users} />
+          <Route path='/addUser' component={UserForm} />
+          <Route path='/userUpdate' component={UserUpdate} />
+          <Route path='/login' component={Login} />
+          <Route path='/logout' component={Logout} />
+        </div>
+      </BrowserRouter>
     );
   }
 }

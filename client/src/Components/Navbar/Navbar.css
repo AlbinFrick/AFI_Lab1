@@ -1,0 +1,44 @@
+nav {
+    width: 100%;
+    height: auto;
+    background-color:rgb(40, 44, 55); 
+}
+nav .logologged {
+    width: 30%;
+    display: inline-block;
+}
+
+nav .logologged h1 {
+    display: inline-block;
+    color: white;
+    margin:  0 0 0 5vw;
+    line-height: 7vw;
+    font-size: 2rem;
+}
+
+nav .logologged p {
+    margin: 0 0 2vw 5vw;
+    display: inline-block;
+    color: white;
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    background-color: rgba(0,0,0, 0.4);
+    display: inline-block;
+    padding: 1vw;
+    margin: 1.5vw;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
